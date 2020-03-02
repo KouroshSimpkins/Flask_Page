@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - ImageProcessor</title>
+    {% else %}
+    <title>Welcome to ImageProcessor</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>ImageProcessor:
+    <a href="/index">Home</a>
+    <a href="/login">Login</a>
+  </div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
